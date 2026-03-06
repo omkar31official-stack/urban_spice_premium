@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Urban Spice · Modern Indian Luxury Restaurant</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">Urban<span>Spice</span></div>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="close-menu" id="closeMenu"><i class="fas fa-times"></i></div>
+        <div class="mobile-links">
+            <a href="#home" class="mobile-link" data-page="home">Home</a>
+            <a href="#menu" class="mobile-link" data-page="menu">Menu</a>
+            <a href="#experience" class="mobile-link" data-page="experience">Experience</a>
+            <a href="#gallery" class="mobile-link" data-page="gallery">Gallery</a>
+            <a href="#reservation" class="mobile-link" data-page="reservation">Reservation</a>
+            <a href="#contact" class="mobile-link" data-page="contact">Contact</a>
+        </div>
+        <div class="mobile-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Urban<span>Spice</span></a>
+            
+            <div class="nav-links">
+                <a href="#home" class="nav-link active" data-page="home">Home</a>
+                <a href="#menu" class="nav-link" data-page="menu">Menu</a>
+                <a href="#experience" class="nav-link" data-page="experience">Experience</a>
+                <a href="#gallery" class="nav-link" data-page="gallery">Gallery</a>
+                <a href="#reservation" class="nav-link" data-page="reservation">Reservation</a>
+                <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+            </div>
+            
+            <div class="nav-right">
+                <a href="#reservation" class="nav-reserve btn-outline">Reserve</a>
+                <div class="hamburger" id="hamburgerBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Sections -->
+    <main id="main-content">
+        <!-- HOME SECTION -->
+        <section id="home" class="section active-section">
+            <!-- Hero with video background -->
+            <div class="hero">
+                <video class="hero-video" autoplay muted loop playsinline id="heroVideo">
+                    <source src="videos/hero-video.mp4" type="video/mp4">
+                    <!-- Fallback text if video doesn't load -->
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-subtitle animate-text">Welcome to</div>
+                    <h1 class="hero-title animate-text">Urban <span>Spice</span></h1>
+                    <div class="hero-description animate-text">Modern Indian Gastronomy</div>
+                    <div class="hero-buttons animate-text">
+                        <a href="#reservation" class="btn-primary">Reserve a Table</a>
+                        <a href="#menu" class="btn-outline-light">Explore Menu</a>
+                    </div>
+                </div>
+                <div class="hero-scroll">
+                    <span>Scroll</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <!-- Signature Dishes Section -->
+            <div class="container section-padding">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Signature Creations</span>
+                    <h2 class="section-title">Culinary <span class="gold-text">Masterpieces</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="dish-grid">
+                    <div class="dish-card reveal">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&h=400&fit=crop" alt="Tandoori Lamb Chops">
+                            <div class="dish-overlay">
+                                <span class="dish-price">$42</span>
+                            </div>
+                        </div>
+                        <div class="dish-info">
+                            <h3>Tandoori Lamb Chops</h3>
+                            <p>24-hour marinated lamb chops with smoked paprika, served with mint chutney</p>
+                        </div>
+                    </div>
+
+                    <div class="dish-card reveal">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=600&h=400&fit=crop" alt="Butter Chicken">
+                            <div class="dish-overlay">
+                                <span class="dish-price">$38</span>
+                            </div>
+                        </div>
+                        <div class="dish-info">
+                            <h3>Signature Butter Chicken</h3>
+                            <p>Slow-cooked in tomato cashew gravy with truffle butter and fenugreek</p>
+                        </div>
+                    </div>
+
+                    <div class="dish-card reveal">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600&h=400&fit=crop" alt="Seafood Biryani">
+                            <div class="dish-overlay">
+                                <span class="dish-price">$45</span>
+                            </div>
+                        </div>
+                        <div class="dish-info">
+                            <h3>Gold Leaf Biryani</h3>
+                            <p>Layered basmati with seafood, saffron, and edible silver leaf</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chef Spotlight -->
+            <div class="chef-spotlight parallax-section" id="chefSpotlight">
+                <div class="container">
+                    <div class="chef-content reveal">
+                        <div class="chef-badge">Chef's Table</div>
+                        <h2 class="chef-name">Chef <span>Arjun Khanna</span></h2>
+                        <p class="chef-quote">"Cooking is the art of transforming memories into flavors. Every dish tells a story of my journey through India's spice routes."</p>
+                        <div class="chef-signature"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Carousel -->
+            <div class="container section-padding">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Guest Experiences</span>
+                    <h2 class="section-title">What Our <span class="gold-text">Guests Say</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="testimonials-container">
+                    <div class="testimonials-wrapper" id="testimonialWrapper">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">"An extraordinary culinary journey. The tasting menu is a masterpiece – each course more surprising than the last. The wine pairings were perfect."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://images.unsplash.com/photo-1531427185911-0411ee4f8b9b?w=200&h=200&fit=crop&crop=faces" alt="Guest">
+                                    <div>
+                                        <h4>Sarah Johnson</h4>
+                                        <span>Food Critic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">"The ambiance is breathtaking. Modern Indian cuisine at its finest. The butter chicken is life-changing!"</p>
+                                <div class="testimonial-author">
+                                    <img src="https://images.unsplash.com/photo-1494790108777-383d5c5a853b?w=200&h=200&fit=crop&crop=faces" alt="Guest">
+                                    <div>
+                                        <h4>Michael Chen</h4>
+                                        <span>Regular Guest</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">"Excellence in every detail – from the service to the presentation. A true gem in the city's dining scene."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=faces" alt="Guest">
+                                    <div>
+                                        <h4>Priya Patel</h4>
+                                        <span>Chef</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-controls">
+                        <button class="testimonial-prev" id="testimonialPrev"><i class="fas fa-arrow-left"></i></button>
+                        <div class="testimonial-dots" id="testimonialDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="testimonial-next" id="testimonialNext"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Offers -->
+            <div class="offers-section">
+                <div class="container">
+                    <div class="offers-grid">
+                        <div class="offer-card reveal">
+                            <div class="offer-badge">Limited Time</div>
+                            <h3>Winter Tasting Menu</h3>
+                            <p>7-course journey through Indian winters</p>
+                            <div class="offer-price">$89<span>/person</span></div>
+                            <a href="#reservation" class="btn-outline">Book Now</a>
+                        </div>
+
+                        <div class="offer-card highlight reveal">
+                            <div class="offer-badge">Chef's Special</div>
+                            <h3>Wine Pairing Experience</h3>
+                            <p>5 premium wines with signature dishes</p>
+                            <div class="offer-price">$129<span>/person</span></div>
+                            <a href="#reservation" class="btn-primary">Book Now</a>
+                        </div>
+
+                        <div class="offer-card reveal">
+                            <div class="offer-badge">Happy Hours</div>
+                            <h3>Sunset Cocktails</h3>
+                            <p>6-8 PM · 50% off select cocktails</p>
+                            <div class="offer-price">$12<span>starting</span></div>
+                            <a href="#reservation" class="btn-outline">Join Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instagram Feed -->
+            <div class="container section-padding">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">@urbanspice</span>
+                    <h2 class="section-title">Follow Our <span class="gold-text">Journey</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="instagram-grid">
+                    <div class="insta-item reveal">
+                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=400&fit=crop" alt="Instagram">
+                        <div class="insta-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="insta-item reveal">
+                        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=400&fit=crop" alt="Instagram">
+                        <div class="insta-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="insta-item reveal">
+                        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&h=400&fit=crop" alt="Instagram">
+                        <div class="insta-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="insta-item reveal">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=400&fit=crop" alt="Instagram">
+                        <div class="insta-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section id="menu" class="section">
+            <div class="container section-padding">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Our Offerings</span>
+                    <h2 class="section-title">Culinary <span class="gold-text">Collection</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Menu Tabs -->
+                <div class="menu-tabs reveal">
+                    <button class="menu-tab active" data-category="starters">Starters</button>
+                    <button class="menu-tab" data-category="mains">Mains</button>
+                    <button class="menu-tab" data-category="desserts">Desserts</button>
+                    <button class="menu-tab" data-category="beverages">Beverages</button>
+                </div>
+
+                <!-- Menu Categories -->
+                <div class="menu-categories">
+                    <!-- Starters -->
+                    <div class="menu-category active-category" id="starters">
+                        <div class="menu-grid">
+                            <div class="menu-card reveal">
+                                <div class="menu-card-image">
+                                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=200&h=200&fit=crop" alt="Dish">
+                                </div>
+                                <div class="menu-card-content">
+                                    <div class="menu-card-header">
+                                        <h3>Tandoori Broccoli</h3>
+                                        <span class="menu-price">$18</span>
+                                    </div>
+                                    <p>Charred broccoli, almond cream, pomegranate</p>
+                                    <div class="menu-tags">
+                                        <span>Vegan</span>
+                                        <span>Gluten-Free</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="menu-card reveal">
+                                <div class="menu-card-image">
+                                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=200&h=200&fit=crop" alt="Dish">
+                                </div>
+                                <div class="menu-card-content">
+                                    <div class="menu-card-header">
+                                        <h3>Lamb Seekh Kebab</h3>
+                                        <span class="menu-price">$24</span>
+                                    </div>
+                                    <p>Minced lamb with spices, mint chutney</p>
+                                    <div class="menu-tags">
+                                        <span>Signature</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="menu-card reveal">
+                                <div class="menu-card-image">
+                                    <img src="https://images.unsplash.com/photo-1626132646232-5afc9142fd9f?w=200&h=200&fit=crop" alt="Dish">
+                                </div>
+                                <div class="menu-card-content">
+                                    <div class="menu-card-header">
+                                        <h3>Paneer Tikka</h3>
+                                        <span class="menu-price">$16</span>
+                                    </div>
+                                    <p>House-made cheese, bell peppers, kasundi mustard</p>
+                                    <div class="menu-tags">
+                                        <span>Vegetarian</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mains -->
+                    <div class="menu-category" id="mains">
+                        <div class="menu-grid">
+                            <div class="menu-card reveal">
+                                <div class="menu-card-image">
+                                    <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=200&h=200&fit=crop" alt="Dish">
+                                </div>
+                                <div class="menu-card-content">
+                                    <div class="menu-card-header">
+                                        <h3>Butter Chicken</h3>
+                                        <span class="menu-price">$34</span>
+                                    </div>
+                                    <p>Tandoori chicken in tomato cashew gravy</p>
+                                    <div class="menu-tags">
+                                        <span>Signature</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="menu-card reveal">
+                                <div class="menu-card-image">
+                                    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=200&h=200&fit=crop" alt="Dish">
+                                </div>
+                                <div class="menu-card-content">
+                                    <div class="menu-card-header">
+                                        <h3>Lamb Rogan Josh</h3>
+                                        <span class="menu-price">$38</span>
+                                    </div>
+                                    <p>Kashmiri lamb curry with fennel and ginger</p>
+                                    <div class="menu-tags">
+                                        <span>Slow-cooked</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="menu-card reveal">
+                                <div class="menu-card-image">
+                                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=200&h=200&fit=crop" alt="Dish">
+                                </div>
+                                <div class="menu-card-content">
+                                    <div class="menu-card-header">
+                                        <h3>Seafood Biryani</h3>
+                                        <span class="menu-price">$42</span>
+                                    </div>
+                                    <p>Layered rice with prawns, scallops, saffron</p>
+                                    <div class="menu-tags">
+                                        <span>Premium</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desserts -->
+                    <div class="menu-category" id="desserts">
+                        <div class="menu-grid">
+                            <div class="menu-card reveal">
+                                <div class="menu-card-image">
+                                    <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=200&h=200&fit=crop" alt="Dish">
+                                </div>
+                                <div class="menu-card-content">
+                                    <div class="menu-card-header">
+                                        <h3>Gulab Jamun Cheesecake</h3>
+                                        <span class="menu-price">$14</span>
+                                    </div>
+                                    <p>Baked cheesecake with gulab jamun, rose syrup</p>
+                                    <div class="menu-tags">
+                                        <span>Signature</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="menu-card reveal">
+                                <div class="menu-card-image">
+                                    <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200&h=200&fit=crop" alt="Dish">
+                                </div>
+                                <div class="menu-card-content">
+                                    <div class="menu-card-header">
+                                        <h3>Saffron Panna Cotta</h3>
+                                        <span class="menu-price">$12</span>
+                                    </div>
+                                    <p>Italian dessert with Indian saffron, pistachios</p>
+                                    <div class="menu-tags">
+                                        <span>Vegetarian</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beverages -->
+                    <div class="menu-category" id="beverages">
+                        <div class="menu-grid">
+                            <div class="menu-card reveal">
+                                <div class="menu-card-image">
+                                    <img src="https://images.unsplash.com/photo-1631452180789-4347bc5b1fe0?w=200&h=200&fit=crop" alt="Dish">
+                                </div>
+                                <div class="menu-card-content">
+                                    <div class="menu-card-header">
+                                        <h3>Mumbai Mule</h3>
+                                        <span class="menu-price">$16</span>
+                                    </div>
+                                    <p>Vodka, ginger, lime, mint</p>
+                                    <div class="menu-tags">
+                                        <span>Cocktail</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="menu-card reveal">
+                                <div class="menu-card-image">
+                                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200&h=200&fit=crop" alt="Dish">
+                                </div>
+                                <div class="menu-card-content">
+                                    <div class="menu-card-header">
+                                        <h3>Saffron Chai</h3>
+                                        <span class="menu-price">$8</span>
+                                    </div>
+                                    <p>Traditional tea with saffron and cardamom</p>
+                                    <div class="menu-tags">
+                                        <span>Non-alcoholic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section">
+            <div class="experience-hero parallax-section" id="experienceHero">
+                <div class="container">
+                    <div class="experience-content reveal">
+                        <h2>The Urban Spice <span class="gold-text">Experience</span></h2>
+                        <p>Where tradition meets innovation in every detail</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container section-padding">
+                <div class="story-grid">
+                    <div class="story-text reveal">
+                        <span class="section-subtitle">Our Story</span>
+                        <h2 class="section-title">A Journey Through <span class="gold-text">Flavors</span></h2>
+                        <p>Urban Spice was born from a vision to redefine Indian fine dining. We blend centuries-old recipes with contemporary techniques, creating dishes that honor tradition while embracing innovation.</p>
+                        <p>Our kitchen is a theater of flavors, where spices are toasted fresh daily and each dish is crafted with precision and passion.</p>
+                    </div>
+                    <div class="story-image reveal">
+                        <img src="https://images.unsplash.com/photo-1517244683847-7456b63c5969?w=800&h=600&fit=crop" alt="Restaurant Interior">
+                    </div>
+                </div>
+
+                <div class="philosophy-grid">
+                    <div class="philosophy-card reveal">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Fresh Ingredients</h3>
+                        <p>We source the finest seasonal ingredients from local farmers and global suppliers.</p>
+                    </div>
+                    <div class="philosophy-card reveal">
+                        <i class="fas fa-fire"></i>
+                        <h3>Traditional Techniques</h3>
+                        <p>Our tandoor and slow-cooking methods bring out authentic flavors.</p>
+                    </div>
+                    <div class="philosophy-card reveal">
+                        <i class="fas fa-wine-glass-alt"></i>
+                        <h3>Curated Pairings</h3>
+                        <p>Expertly selected wines and cocktails complement every dish.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+        <section id="gallery" class="section">
+            <div class="container section-padding">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Visual Journey</span>
+                    <h2 class="section-title">Our <span class="gold-text">Gallery</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="gallery-filter reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="food">Food</button>
+                    <button class="filter-btn" data-filter="interior">Interior</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Gallery items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- RESERVATION SECTION -->
+        <section id="reservation" class="section">
+            <div class="container section-padding">
+                <div class="reservation-wrapper">
+                    <div class="reservation-content reveal">
+                        <div class="section-header">
+                            <span class="section-subtitle">Book Your Table</span>
+                            <h2 class="section-title">Reserve Your <span class="gold-text">Experience</span></h2>
+                            <div class="section-divider"></div>
+                        </div>
+
+                        <form id="reservationForm" class="reservation-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="guests">Number of Guests *</label>
+                                    <select id="guests" name="guests" required>
+                                        <option value="1">1 Guest</option>
+                                        <option value="2">2 Guests</option>
+                                        <option value="3">3 Guests</option>
+                                        <option value="4">4 Guests</option>
+                                        <option value="5">5 Guests</option>
+                                        <option value="6">6 Guests</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Date *</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Time *</label>
+                                    <select id="time" name="time" required>
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="17:30">5:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="special-requests">Special Requests</label>
+                                <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                            </div>
+
+                            <div class="form-group form-checkbox">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe to our newsletter for exclusive offers</label>
+                            </div>
+
+                            <button type="submit" class="btn-primary btn-full">Confirm Reservation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="container section-padding">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Contact <span class="gold-text">Us</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>22 Connaught Place, New Delhi<br>110001, India</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+91 11 4222 3333<br>+91 11 4222 3344</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>reservations@urbanspice.com<br>info@urbanspice.com</p>
+                            </div>
+                        </div>
+
+                        <div class="hours-card">
+                            <h3>Opening Hours</h3>
+                            <ul class="hours-list">
+                                <li><span>Monday - Thursday</span> <span>6:00 PM - 12:00 AM</span></li>
+                                <li><span>Friday - Saturday</span> <span>5:00 PM - 1:00 AM</span></li>
+                                <li><span>Sunday</span> <span>5:00 PM - 11:00 PM</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper reveal">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="contact-name" name="name" placeholder="Your Name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="contact-email" name="email" placeholder="Your Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="contact-subject" name="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contact-message" name="message" rows="5" placeholder="Your Message *" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Google Maps Integration -->
+                <div class="map-container reveal">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.901456785778!2d77.21867331508077!3d28.63298238241697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd1b6c1b1b1b%3A0x1b1b1b1b1b1b1b1b!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1645567890123!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">Urban<span>Spice</span></div>
+                    <p>Modern Indian fine dining in the heart of the city. Experience the perfect blend of tradition and innovation.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Urban Spice. All rights reserved. | Designed with <i class="fas fa-heart"></i> in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
